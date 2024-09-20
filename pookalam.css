@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.pookkalam {
+    border-radius: 50%;
+    padding: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg {
+    filter: drop-shadow(0 0 10px rgba(255, 105, 180, 0.5));
+}
+/* front design for hpy onum ----*/
+  /*Styling for the Onam-themed Header */
+  h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #FFD700; /* Gold color representing prosperity */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Subtle shadow for depth */
+    
+    -webkit-background-clip: text;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+
+  /* Add a floral pattern to represent Pookalam */
+  h1::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    width: 200px;
+    height: 200px;
+    
+    background-size: contain;
+    opacity: 0.2; /* Subtle floral pattern */
+    z-index: -1;
+  }
+
+  h1::after {
+    content: '';
+    position: absolute;
+    bottom: -50px;
+    right: -50px;
+    width: 200px;
+    height: 200px;
+   
+    background-size: contain;
+    opacity: 0.2;
+    z-index: -1;
+  }
+
+  /* Animation to give celebratory effect */
+  h1 span {
+    display: inline-block;
+    animation: pop 1.5s ease-in-out infinite;
+  }
+
+  h1 span:nth-child(odd) {
+    animation-delay: 0.3s;
+  }
+
+  @keyframes pop {
+    0%, 100% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+  }
